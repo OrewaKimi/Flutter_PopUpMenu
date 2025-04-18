@@ -7,33 +7,24 @@ class MenuItems extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        //1st menu option
-        ListTile(
-          title: Text('Menu 1', style: TextStyle(color: Colors.white)),
-          trailing: Icon(Icons.arrow_forward, color: Colors.white),
-          onTap: () {
-            // action untuk menu 1
-          },
-        ),
-
-        //2nd menu option
-        ListTile(
-          title: Text('Menu 2', style: TextStyle(color: Colors.white)),
-          trailing: Icon(Icons.arrow_forward, color: Colors.white),
-          onTap: () {
-            // action untuk menu 2
-          },
-        ),
-
-        //3rd menu option
-        ListTile(
-          title: Text('Menu 3', style: TextStyle(color: Colors.white)),
-          trailing: Icon(Icons.arrow_forward, color: Colors.white),
-          onTap: () {
-            // action untuk menu 3
-          },
-        ),
+        buildMenuItem('Menu 1', Icons.dashboard, () {
+          // action menu 1
+        }),
+        buildMenuItem('Menu 2', Icons.settings, () {
+          // action menu 2
+        }),
+        buildMenuItem('Menu 3', Icons.info, () {
+          // action menu 3
+        }),
       ],
+    );
+  }
+
+  Widget buildMenuItem(String title, IconData icon, VoidCallback onTap) {
+    return ListTile(
+      leading: Icon(icon, color: Colors.white),
+      title: Text(title, style: const TextStyle(color: Colors.white)),
+      onTap: onTap,
     );
   }
 }
