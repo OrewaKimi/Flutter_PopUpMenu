@@ -27,17 +27,17 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.deepPurple.shade900,
         title: const Text(
-          'Popup Menu UI',
+          'Popup Menu',
           style: TextStyle(color: Colors.white),
         ),
         centerTitle: true,
       ),
       body: Center(
         child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 16),
+          padding: const EdgeInsets.symmetric(horizontal: 50),
           child: Container(
             width: double.infinity,
-            padding: const EdgeInsets.all(24),
+            padding: const EdgeInsets.all(16),
             decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(20),
