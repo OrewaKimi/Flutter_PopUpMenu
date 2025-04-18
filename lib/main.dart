@@ -8,14 +8,56 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: Center(
-          child: MyButton(),
+      home: HomePage(),
+    );
+  }
+}
+
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.deepPurple.shade50,
+      appBar: AppBar(
+        backgroundColor: Colors.deepPurple,
+        title: const Text('Popup Menu UI Upgrade'),
+        centerTitle: true,
+      ),
+      body: Center(
+        child: Container(
+          width: 320,
+          padding: const EdgeInsets.all(16),
+          decoration: BoxDecoration(
+            color: Colors.deepPurple.shade100,
+            borderRadius: BorderRadius.circular(16),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.deepPurple.shade200,
+                blurRadius: 8,
+                offset: const Offset(0, 4),
+              ),
+            ],
+          ),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              const Text(
+                'Kolom Konten',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 18,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+              const MyButton(),
+            ],
+          ),
         ),
       ),
     );
