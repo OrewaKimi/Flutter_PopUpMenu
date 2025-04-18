@@ -12,13 +12,13 @@ class MyButton extends StatelessWidget {
         context: context,
         bodyBuilder: (context) => const MenuItems(),
         width: 200,
-        height: 150,
-        backgroundColor: Colors.deepPurple.shade300,
+        height: 160,
+        backgroundColor: Colors.white,
         direction: PopoverDirection.bottom,
       ),
       child: const Icon(
         Icons.more_vert,
-        color: Colors.white,
+        color: Colors.deepPurple,
       ),
     );
   }
