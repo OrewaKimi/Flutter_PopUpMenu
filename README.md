@@ -34,8 +34,20 @@ Dengan menggunakan package `popover`, kita bisa membuat Pop Up Menu yang lebih f
 ## 📸 Tampilan Aplikasi
 ### Tampilan Awal
 ![image](https://github.com/user-attachments/assets/2dea4c86-dd5c-40e8-b232-b7503d7ca27a)
+
 ### Tampilan Pop Up Menu
 ![image](https://github.com/user-attachments/assets/29b44422-851e-440b-8c69-c9884b99dfdb)
+
+## 🔧 Depedency
+Tambahkan di `pubspec.yaml`: dependencies: `popover: ^0.2.8+2`  atau versi terbaru
+---  
+  
+
+## 🚀 Jalankan Proyek
+
+```bash
+flutter pub get
+flutter run
 
 
 
