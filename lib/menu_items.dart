@@ -8,16 +8,30 @@ class MenuItems extends StatelessWidget {
     return Column(
       children: [
         //1st menu option
-        Container(height: 50,
-        color: Colors.deepPurple[300],
+        ListTile(
+          title: Text('Menu 1', style: TextStyle(color: Colors.white)),
+          trailing: Icon(Icons.arrow_forward, color: Colors.white),
+          onTap: () {
+            // action untuk menu 1
+          },
         ),
 
         //2nd menu option
-        Container(height: 50, color: Colors.deepPurple[200],
+        ListTile(
+          title: Text('Menu 2', style: TextStyle(color: Colors.white)),
+          trailing: Icon(Icons.arrow_forward, color: Colors.white),
+          onTap: () {
+            // action untuk menu 2
+          },
         ),
 
         //3rd menu option
-        Container(height: 50, color: Colors.deepPurple[100],
+        ListTile(
+          title: Text('Menu 3', style: TextStyle(color: Colors.white)),
+          trailing: Icon(Icons.arrow_forward, color: Colors.white),
+          onTap: () {
+            // action untuk menu 3
+          },
         ),
       ],
     );
