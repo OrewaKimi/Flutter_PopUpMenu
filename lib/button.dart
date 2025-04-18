@@ -9,8 +9,12 @@ class MyButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () => showPopover(context: context, bodyBuilder: (context) => MenuItems(),
+      width: 250,
+      height: 150,
+      backgroundColor: Colors.deepPurple.shade300,
+      direction: PopoverDirection.top,
       ),
-      child: Icon(Icons.more_vert),
+      child: Icon(Icons.more_vert),      
     );
   }
 }
