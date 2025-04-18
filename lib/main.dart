@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:popupmenu/button.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +14,9 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        
+        body: Center(
+          child: MyButton(),
+        ),
       ),
     );
   }
